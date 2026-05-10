@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Gallery | Vitthal College of Education</title>
+    <link rel="icon" type="image/png" href="https://i.ibb.co/8nsnRw1c/Code-Generated-Image.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #ffffff; scroll-behavior: smooth; }
+        .bg-crimson { background-color: #b91c1c; }
+        .text-crimson { color: #b91c1c; }
+        
+        /* Navigation Hover Effect */
+        .nav-link { position: relative; transition: color 0.3s ease; }
+        .nav-link::after {
+            content: ''; position: absolute; width: 0; height: 2px;
+            bottom: -4px; left: 0; background-color: #b91c1c;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after { width: 100%; }
+        .nav-link:hover { color: #b91c1c; }
+
+        /* Advanced Gallery Effects */
+        .gallery-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 2.5rem;
+            background-color: #f8fafc;
+            transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .gallery-card img {
+            transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .gallery-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 40px 80px rgba(185, 28, 28, 0.12);
+        }
+        .gallery-card:hover img {
+            transform: scale(1.08);
+        }
+
+        .gallery-overlay {
+            background: linear-gradient(to top, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.4) 50%, transparent 100%);
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        .gallery-card:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .footer-logo { filter: brightness(0) invert(1); }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #b91c1c; border-radius: 10px; }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <div class="bg-crimson py-2 text-white">
+        <div class="container mx-auto px-4 flex justify-between items-center text-[10px] font-bold uppercase tracking-[0.2em]">
+            <div class="hidden md:block">GN WEBWORKS | Production Infrastructure</div>
+            <div class="flex gap-6">
+                <a href="contact.html" class="hover:text-amber-300 transition">ADMISSION HELPLINE: +91 9263636368</a>
+            </div>
+        </div>
+    </div>
+
+   <!-- Top Bar -->
+<div class="bg-[#b91c1c] py-1.5 relative z-[60]">
+    <div class="container mx-auto px-4 flex justify-end gap-6">
+        <a href="tel:+919263636368" class="text-[10px] font-bold uppercase tracking-widest text-white hover:text-amber-200 transition">
+            Admission Helpline: +91 9263636368
+        </a>
+    </div>
+</div>
+
+<!-- Glassmorphism Header -->
+<header class="sticky top-0 z-50 transition-all duration-300">
+    <div class="mx-4 mt-4"> 
+        <nav class="container mx-auto px-6 py-4 rounded-3xl border border-white/20 bg-white/70 backdrop-blur-md shadow-lg">
+            <div class="flex flex-col lg:flex-row justify-between items-center gap-4">
+                
+                <!-- Logo Branding -->
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="https://i.ibb.co/8nsnRw1c/Code-Generated-Image.png" alt="Logo" class="h-10 w-auto">
+                    <div class="border-l border-slate-300 pl-3">
+                        <span class="block text-sm font-black text-slate-900 leading-tight uppercase">Vitthal College</span>
+                        <span class="block text-[9px] font-bold text-[#b91c1c] tracking-widest uppercase">Of Education</span>
+                    </div>
+                </a>
+
+                <!-- Navigation Links -->
+                <ul class="flex flex-wrap justify-center gap-x-5 gap-y-2 text-[10px] font-black uppercase tracking-widest text-slate-600">
+                    <li><a href="index.html" class="hover:text-[#b91c1c] transition-colors">Home</a></li>
+                    <li><a href="about.html" class="hover:text-[#b91c1c] transition-colors">About</a></li>
+                    <li><a href="academic.html" class="hover:text-[#b91c1c] transition-colors">Academic</a></li>
+                    <li><a href="activities.html" class="hover:text-[#b91c1c] transition-colors">Activities</a></li>
+                    <li><a href="faculties.html" class="hover:text-[#b91c1c] transition-colors">Faculties</a></li>
+                    <li><a href="gallery.html" class="hover:text-[#b91c1c] transition-colors">Gallery</a></li>
+                    <li><a href="approval.html" class="hover:text-[#b91c1c] transition-colors">Approval</a></li>
+                    <li><a href="downloads.html" class="hover:text-[#b91c1c] transition-colors">Downloads</a></li>
+                    <li><a href="contact.html" class="px-4 py-2 bg-[#b91c1c] text-white rounded-full hover:bg-slate-900 transition-all shadow-md">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+    <section class="bg-slate-50 py-24 border-b border-slate-100 relative overflow-hidden">
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <span class="text-crimson font-black text-[10px] uppercase tracking-[0.5em] mb-4 block">Our Infrastructure</span>
+            <h1 class="text-5xl md:text-7xl font-black text-slate-900 tracking-tighter uppercase mb-6">The <span class="text-crimson">Gallery</span></h1>
+            <p class="text-slate-500 max-w-2xl mx-auto text-lg leading-relaxed italic">Capturing the essence of academic excellence and campus life.</p>
+        </div>
+    </section>
+
+    <main class="py-24 container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            
+            <div class="gallery-card lg:col-span-3 h-[450px] md:h-[650px]">
+                <img src="https://i.ibb.co/W4wQpfX3/building.jpg" alt="Vitthal College Building" class="w-full h-full object-cover">
+                <div class="gallery-overlay absolute inset-0 flex items-end p-12">
+                    <div class="max-w-3xl">
+                        <span class="bg-crimson text-white text-[10px] font-black uppercase tracking-[0.4em] px-6 py-2 rounded-full mb-6 inline-block">Primary Infrastructure</span>
+                        <h2 class="text-white text-4xl md:text-6xl font-black uppercase tracking-tighter mb-4">Main Campus Building</h2>
+                        <p class="text-slate-300 text-base leading-relaxed">A sprawling modern campus designed to foster concentration, creativity, and professional growth for Bihar's future educators.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-card aspect-square lg:aspect-auto lg:h-[500px]">
+                <img src="https://i.ibb.co/1twg5kq3/class.jpg" alt="ICT Classroom" class="w-full h-full object-cover">
+                <div class="gallery-overlay absolute inset-0 flex items-end p-10">
+                    <div>
+                        <span class="bg-white/20 backdrop-blur-md text-white text-[9px] font-black uppercase tracking-[0.3em] px-4 py-1.5 rounded-full mb-4 inline-block border border-white/30">Academics</span>
+                        <h3 class="text-white text-3xl font-black uppercase tracking-tighter">Classroom</h3>
+                        <p class="text-slate-300 text-xs mt-2">Fully equipped learning environment.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-card aspect-square lg:aspect-auto lg:h-[500px]">
+                <img src="https://i.ibb.co/Zz0fc9hM/event.jpg" alt="College Events" class="w-full h-full object-cover">
+                <div class="gallery-overlay absolute inset-0 flex items-end p-10">
+                    <div>
+                        <span class="bg-white/20 backdrop-blur-md text-white text-[9px] font-black uppercase tracking-[0.3em] px-4 py-1.5 rounded-full mb-4 inline-block border border-white/30">Campus Life</span>
+                        <h3 class="text-white text-3xl font-black uppercase tracking-tighter">Cultural Fest</h3>
+                        <p class="text-slate-300 text-xs mt-2">Celebrating diversity and talent beyond textbooks.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-card aspect-square lg:aspect-auto lg:h-[500px]">
+                <img src="http://googleusercontent.com/image_collection/image_retrieval/1639411849910304323_1" alt="Science Laboratory" class="w-full h-full object-cover">
+                <div class="gallery-overlay absolute inset-0 flex items-end p-10">
+                    <div>
+                        <span class="bg-white/20 backdrop-blur-md text-white text-[9px] font-black uppercase tracking-[0.3em] px-4 py-1.5 rounded-full mb-4 inline-block border border-white/30">Practical Training</span>
+                        <h3 class="text-white text-3xl font-black uppercase tracking-tighter">Science Lab</h3>
+                        <p class="text-slate-300 text-xs mt-2">Hands-on experience with modern apparatus.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-slate-900 text-white pt-20 pb-10">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 border-b border-white/10 pb-16">
+                <div class="col-span-1 md:col-span-2">
+                    <img src="https://i.ibb.co/8nsnRw1c/Code-Generated-Image.png" alt="Footer Logo" class="h-16 mb-6 footer-logo">
+                    <p class="text-slate-400 text-sm leading-relaxed max-w-md">
+                        The visual legacy of Vitthal College of Education, Patna. Maintenance and digital infrastructure powered by GN Webworks.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-xs font-black uppercase tracking-widest mb-6 text-crimson">Company</h4>
+                    <p class="text-slate-400 text-[10px] font-bold uppercase tracking-widest mb-2">GN Webworks</p>
+                    <p class="text-slate-500 text-[9px] uppercase tracking-widest">Gyan Niketan Webworks</p>
+                </div>
+            </div>
+            <div class="mt-10 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-bold uppercase tracking-[0.3em] text-slate-500">
+                <p>© 2026 Vitthal College of Education | Patna</p>
+                <p>Designed and Maintained by GN Webworks</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

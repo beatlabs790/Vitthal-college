@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Vitthal College of Education</title>
+    <link rel="icon" type="image/png" href="https://i.ibb.co/8nsnRw1c/Code-Generated-Image.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #ffffff; scroll-behavior: smooth; }
+        .bg-crimson { background-color: #b91c1c; }
+        .text-crimson { color: #b91c1c; }
+        
+        .nav-link { position: relative; transition: color 0.3s ease; }
+        .nav-link::after {
+            content: ''; position: absolute; width: 0; height: 2px;
+            bottom: -4px; left: 0; background-color: #b91c1c;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after { width: 100%; }
+        .nav-link:hover { color: #b91c1c; }
+
+        .contact-card {
+            background: white;
+            border: 1px solid #f1f5f9;
+            transition: all 0.4s ease;
+        }
+        .contact-card:hover {
+            border-color: #fee2e2;
+            box-shadow: 0 30px 60px rgba(185, 28, 28, 0.05);
+        }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <div class="bg-crimson py-2 text-white">
+        <div class="container mx-auto px-4 flex justify-between items-center text-[10px] font-bold uppercase tracking-[0.2em]">
+            <div class="hidden md:block">Admission Inquiry Session 2026-28</div>
+            <div class="flex gap-6">
+                <span>NCTE Code: ERCAPP1441</span>
+            </div>
+        </div>
+    </div>
+
+    <header class="sticky top-0 z-[100] bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex flex-col lg:flex-row justify-between items-center gap-6">
+            <a href="index.html" class="flex items-center gap-4 group">
+                <img src="https://i.ibb.co/8nsnRw1c/Code-Generated-Image.png" alt="Logo" class="h-14 w-auto object-contain transition-transform group-hover:scale-110">
+                <div class="border-l border-slate-200 pl-4">
+                    <span class="block text-lg font-black text-slate-900 leading-tight tracking-tighter">VITTHAL COLLEGE</span>
+                    <span class="block text-[10px] font-bold text-crimson tracking-[0.3em] uppercase">Of Education</span>
+                </div>
+            </a>
+            <ul class="flex flex-wrap justify-center gap-x-8 text-[11px] font-black uppercase tracking-widest text-slate-500">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="academic.html" class="nav-link">Academic</a></li>
+                <li><a href="faculties.html" class="nav-link">Faculties</a></li>
+                <li><a href="approval.html" class="nav-link">Approval</a></li>
+                <li><a href="downloads.html" class="nav-link">Downloads</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="text-crimson nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="bg-slate-50 py-24 border-b border-slate-100">
+        <div class="container mx-auto px-4 text-center">
+            <span class="text-crimson font-black text-[10px] uppercase tracking-[0.4em] mb-4 block">Get In Touch</span>
+            <h1 class="text-4xl md:text-6xl font-black text-slate-900 tracking-tighter uppercase">Contact <span class="text-crimson">Us</span></h1>
+            <p class="text-slate-500 mt-6 max-w-2xl mx-auto text-lg leading-relaxed">Reach out to our administrative office for admissions, documentation, or campus tours.</p>
+        </div>
+    </section>
+
+    <main class="py-24">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
+                
+                <div class="lg:col-span-1 space-y-6">
+                    <div class="contact-card p-8 rounded-[2.5rem]">
+                        <h4 class="text-[10px] font-black uppercase tracking-widest text-crimson mb-4">Visit Us</h4>
+                        <p class="text-sm font-bold text-slate-900 leading-relaxed">Vitthal College of Education,<br>Near Danapur Station, Patna, Bihar</p>
+                    </div>
+                    <div class="contact-card p-8 rounded-[2.5rem]">
+                        <h4 class="text-[10px] font-black uppercase tracking-widest text-crimson mb-4">Call Us</h4>
+                        <p class="text-sm font-bold text-slate-900">+91 9263636368</p>
+                        <p class="text-[10px] text-slate-400 uppercase font-black tracking-widest mt-1">Admission Cell</p>
+                    </div>
+                    <div class="contact-card p-8 rounded-[2.5rem]">
+                        <h4 class="text-[10px] font-black uppercase tracking-widest text-crimson mb-4">Email Us</h4>
+                        <p class="text-sm font-bold text-slate-900">vcepatna@rediffmail.com</p>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-2 bg-white border border-slate-100 p-10 md:p-16 rounded-[4rem] shadow-sm">
+                    <form action="mailto:info@vitthalcollege.com?subject=Website Inquiry" method="POST" enctype="text/plain" class="space-y-8">
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <label class="block text-[10px] font-black uppercase tracking-widest text-slate-400 mb-3">Your Name</label>
+                                <input type="text" name="Name" required placeholder="John Doe" 
+                                    class="w-full bg-slate-50 border border-slate-100 p-5 rounded-2xl focus:outline-none focus:border-crimson transition">
+                            </div>
+                            <div>
+                                <label class="block text-[10px] font-black uppercase tracking-widest text-slate-400 mb-3">Phone Number</label>
+                                <input type="tel" name="Phone" required placeholder="+91" 
+                                    class="w-full bg-slate-50 border border-slate-100 p-5 rounded-2xl focus:outline-none focus:border-crimson transition">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-[10px] font-black uppercase tracking-widest text-slate-400 mb-3">Your Message</label>
+                            <textarea name="Message" rows="5" required placeholder="Tell us about your inquiry..." 
+                                class="w-full bg-slate-50 border border-slate-100 p-5 rounded-2xl focus:outline-none focus:border-crimson transition"></textarea>
+                        </div>
+
+                        <button type="submit" 
+                            class="w-full bg-crimson text-white font-black uppercase text-[11px] tracking-[0.4em] py-6 rounded-2xl hover:bg-slate-900 transition-all shadow-xl shadow-red-900/10">
+                            Submit Inquiry
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-slate-900 text-white pt-20 pb-10">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 border-b border-white/10 pb-16">
+                <div class="col-span-1 md:col-span-2">
+                    <h4 class="text-xs font-black uppercase tracking-widest mb-6 text-crimson">Institutional Profile</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed max-w-md">
+                        Vitthal College of Education is a premier Teacher Training College recognized by NCTE and affiliated with Patliputra University, Patna.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-xs font-black uppercase tracking-widest mb-6 text-crimson">Quick Links</h4>
+                    <ul class="space-y-4 text-sm text-slate-400 font-medium">
+                        <li><a href="about.html" class="hover:text-white transition">About College</a></li>
+                        <li><a href="gallery.html" class="hover:text-white transition">Campus Gallery</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-black uppercase tracking-widest mb-6 text-crimson">Administration</h4>
+                    <a href="developers.html" class="inline-block border border-white/20 px-6 py-2 rounded-lg text-[10px] font-bold uppercase tracking-widest hover:bg-white hover:text-slate-900 transition">
+                        Meet the Developers
+                    </a>
+                </div>
+            </div>
+            <div class="mt-10 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-bold uppercase tracking-[0.3em] text-slate-500">
+                <p>© 2026 Vitthal College | Patna</p>
+                <p>Designed and Maintained by GN Webworks</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
